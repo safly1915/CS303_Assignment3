@@ -1,8 +1,8 @@
 #ifndef SEARCH_H
 #define SEARCH_H
-
 #include <vector>
 #include "queue.h"
+using namespace std;
 
 // Recursive linear search to find last occurrence of target in a vector
 template <typename T>
