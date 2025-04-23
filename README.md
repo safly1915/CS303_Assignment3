@@ -12,4 +12,4 @@ Thanks!
 Sam Safly
 CS303-0002-13031
 
-(./assignment3-ss.png)
+![Assignment 3 Screenshot](./assignment3-ss.png)
