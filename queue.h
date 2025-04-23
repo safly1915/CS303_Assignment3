@@ -1,29 +1,29 @@
 #ifndef QUEUE_H
 #define QUEUE_H
+#include "queue.cpp"  //tnclude template implementation
+using namespace std;
 
 template <typename T>
-class Queue {
+class Queue { //template for queue class
 private:
-    struct Node {
-        T data;
-        Node* next;
-        Node(T item) : data(item), next(nullptr) {}
+    struct Node { //node struct
+        T data; 
+        Node* next; //pointer to next node
+        Node(T item) : data(item), next(nullptr) {} //constructor for node
     };
-    Node* front_node;
-    Node* rear_node;
-    int count;
+    Node* front_node; //pointer to front node
+    Node* rear_node; //pointer to rear node
+    int count; //integer to keep track of size
 
 public:
-    Queue();
-    ~Queue();
-    void push(const T& item);
-    void pop();
-    T front() const;
-    int size() const;
-    bool empty() const;
-    void move_to_rear();
+    Queue(); //constructor for queue
+    ~Queue(); //destructor for queue
+    void push(const T& item); //push function
+    void pop(); //pop function
+    T front() const; //front function
+    int size() const; //size function
+    bool empty() const; //empty function
+    void move_to_rear(); //move to rear function
 };
-
-#include "queue.cpp"  // Include template implementation
 
 #endif
