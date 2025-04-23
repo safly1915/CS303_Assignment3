@@ -1,6 +1,5 @@
 #ifndef QUEUE_H
 #define QUEUE_H
-#include "queue.cpp"  //tnclude template implementation
 using namespace std;
 
 template <typename T>
@@ -26,4 +25,5 @@ public:
     void move_to_rear(); //move to rear function
 };
 
+#include "queue.cpp"  //include template implementation
 #endif

@@ -31,7 +31,7 @@ int main() {
 
     vector<int> vec = {2, 5, 1, 7, 5, 9, 5}; //vector for question 2 (can be updated to any vector of integers)
     int target = 5; //target value to search for (can be updated to any integer)
-    int last_index = recursive_last_index(vec, target); //call recursive last index function
+    int last_index = recursive_last_search(vec, target); //call recursive last index function
     cout << "Last occurrence of " << target << " is at index: " << last_index << endl << endl; //returns index of last occurrence
 
     Queue<int> unsorted; //create queue for question 3 (can be updated to any queue of integers)
